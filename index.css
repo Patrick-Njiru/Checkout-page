@@ -1,6 +1,24 @@
 @import url(./node_modules/bootstrap/dist/css/bootstrap.min.css);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-body {
-  background-color: rgb(203, 218, 218);
+body {  background-color: rgb(203, 218, 218); }
+
+.express-btn {
+  min-width: 100px; 
+  max-width: 150px;
 }
+
+.line-span {
+  background-color: black; 
+  height: 4px;
+}
+
+input#quantity { width: 50px; }
+
+.order-total { background-color: rgb(182, 180, 180); }
+
+#complete-btn { background-color: orangered; }
+
+#complete-btn:hover { background-color: rgba(255, 68, 0, 0.719);}
+
+img.logo { height: 80px;}
