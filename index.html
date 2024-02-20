@@ -16,19 +16,33 @@
           <img src="images/bellroy-logo.jpg" alt="logo" class="img-fluid" style="height: 80px;">
           <h3>Secure Checkout</h3>
         </div>
-        <div class="d-none d-md-block"></div>
+        <div class="d-none d-md-flex align-items-center justify-content-between col-md-4 col-lg-3">
+          <div class="text-secondary">
+            <i class="bi bi-award h3 d-block mb-2"></i>
+            <h6>3 year warranty</h6>
+          </div>
+          <div class="text-secondary">
+            <i class="bi bi-globe2 h3 d-block mb-2"></i>
+            <h6>Global delivery</h6>
+          </div>
+          <div class="text-secondary">
+            <i class="bi bi-file-lock h3 d-block mb-2"></i>
+            <h6>Secure payment</h6>
+          </div>
+
+        </div>
       </div>
     </div>
   </header>
 
   <!-- Express Payment section -->
-  <section class="container bg-white text-center p-2">
+  <section class="container bg-white text-center p-2 col-11 col-sm-12">
     <h4> EXPRESS PAYMENT </h4>
     <div class="d-sm-flex justify-content-center"> 
-      <button class="btn btn-warning text-primary btn-lg rounded-0 m-3" style="width: 150px;">
+      <button class="btn btn-warning text-primary btn-lg rounded-0 m-3" style="min-width: 100px; max-width: 150px;">
         <img src="/images/paypal-logo-svg-vector.svg" alt="paypal" class="img-fluid">
       </button>
-      <button class="btn btn-dark btn-lg rounded-0 m-3" style="width: 150px;">
+      <button class="btn btn-dark btn-lg rounded-0 m-3" style="min-width: 100px; max-width: 150px;">
         <img src="/images/g-pay.svg.png" alt="g-pay" class="img-fluid">
       </button>
     </div>
@@ -37,17 +51,21 @@
 
   <!-- OR -->
   <div class="container my-4">
-    <div class="d-flex align-items-center justify-content-between my-3 p-0 mx-0">
-      <span style="width: 43%; background-color: black; height: 4px; display: block; margin-right: 1%;"></span> 
-      <span class="fw-bold"> OR </span> 
-      <span style="width: 43%; background-color: black; height: 4px; display: block; margin-left: 1%;"></span>
+    <div class="d-flex align-items-center justify-content-between my-3 p-0 mx-0 col-11 col-sm-12">
+      <span class="col-5 d-block" style="background-color: black; height: 4px"></span> 
+      <span class="col-2 text-center fw-bold"> OR </span> 
+      <span class="col-5 d-block" style="background-color: black; height: 4px"></span>
     </div>
   </div>
 
-  <div class="container pe-5">
-    <div class="d-flex-col d-lg-flex align-items-start justify-content-between">
-      <!-- Order Review Section -->
-      <section class="col-md-4 bg-white shadow m-2 my-4 p-3">
+
+  <!-- Main Section with 3 Sections -->
+  <main class="container p-0">
+    <div class="d-flex-col d-md-flex flex-wrap  justify-content-between">
+
+
+      <!--  1 - Order Review Section -->
+      <section class="col-11 col-md-5 col-lg-4 bg-white my-4 p-3 shadow mx-auto">
         <h5 class="fw-bold"> 1. REVIEW YOUR ORDER </h5>
         <div class="row">
           <div class="col-4">
@@ -120,7 +138,7 @@
             <div class="me-2">
               <input type="checkbox" name="" id="">
             </div>
-            <div class="">
+            <div class="text-secondary">
               <p class="fw-bold mb-0">Is this a gift?</p>
               <p>If so, we won't include your invoice in the package.</p>
             </div>
@@ -129,8 +147,9 @@
 
       </section>
 
-      <!-- Delivery Address Section -->
-      <section class="col-md-4 bg-white shadow m-2 my-4 p-3">
+
+      <!-- 2 - Delivery Address Section -->
+      <section class="col-11 col-md-5 col-lg-3 bg-white m-2 my-4 p-3 shadow mx-auto">
         <h5 class="fw-bold"> 2. DELIVERY ADDRESS </h5>
         <p class="text-secondary my-3">All fields required</p>
         <form>
@@ -182,8 +201,9 @@
 
       </section>
 
-      <!-- Payment Method And Order Summary Section -->
-      <section class="col-md-4 m-2 my-4 bg-transparent border-0">
+
+      <!-- 3 - Payment Method And Order Summary Section -->
+      <section class="col-11 col-md-5 col-lg-4 my-4 bg-transparent border-0 mx-auto">
         <div class="bg-white shadow p-3">
 
           <!-- Payment Method -->
@@ -243,7 +263,7 @@
         </div>
 
         <!-- Order Total -->
-        <div class="p-3 d-flex justify-content-between align-items-center flex-wrap" style="background-color: lightgray;">
+        <div class="p-3 d-flex justify-content-between align-items-center flex-wrap shadow" style="background-color: lightgray;">
           <h5 class="fw-bold">ORDER TOTAL</h5>
           <h5>USD <span class="h2">$72</span> <span class="h6">.32</span></h5>
         </div>
@@ -251,15 +271,36 @@
           <div class="me-2">
             <input type="checkbox" name="" id="" checked>
           </div>
-          <div class="">
+          <div class="text-secondary">
             <p class="fw-bold">Email me about new products and surprise treats!</p>
           </div>
         </div>
-
-        <button class="btn w-100 h4 fw-bold text-white p-3" style="background-color: orangered;"> COMPLETE ORDER</button>
-
+        <button id="complete-btn" class="btn w-100 h4 fw-bold text-white p-3" style="background-color: orangered;"> COMPLETE ORDER</button>
       </section>
+
     </div>
-  </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 text-light">
+    <div class="container d-sm-flex flex-wrap justify-content-between">
+      <div class=" mb-3">
+        <i class="bi bi-award text-light me-2"></i>
+        3 year warranty
+      </div>
+      <div class=" mb-3">
+        <i class="bi bi-arrow-counterclockwise text-light me-2"></i>
+        30-day refund
+      </div>
+      <div class=" mb-3">
+        <i class="bi bi-file-lock text-light me-2"></i>
+        Secure payment
+      </div>
+      <div>
+        <i class="bi bi-trophy-fill text-light me-2"></i>
+        Award winning service
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
