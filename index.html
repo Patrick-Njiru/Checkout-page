@@ -45,7 +45,7 @@
   </div>
 
   <div class="container">
-    <div class="d-flex-col d-lg-flex align-items-center justify-content-between">
+    <div class="d-flex-col d-lg-flex align-items-start justify-content-between">
       <!-- Order Review Section -->
       <section class="col-md-4 bg-white rounded shadow mb-3 me-3 p-3">
         <h5 class="fw-bold"> 1. REVIEW YOUR ORDER </h5>
@@ -132,6 +132,53 @@
       <!-- Delivery Address Section -->
       <section class="col-md-4 bg-white rounded shadow mb-3 me-3 p-3">
         <h5 class="fw-bold"> 2. DELIVERY ADDRESS </h5>
+        <p class="text-secondary my-3">All fields required</p>
+        <form>
+          <fieldset class="my-4">
+            <label for="email" class="fw-bold d-block my-1">Email address*</label>
+            <input type="email" name="" id="" placeholder="e.g roy@bellroy.com" class="rounded col-12 py-2 ps-1" required>
+          </fieldset>
+          <fieldset class="my-4">
+            <label for="first name" class="fw-bold d-block my-1">First name*</label>
+            <input type="text" name="" id="" class="rounded col-12 py-2 ps-1" required>
+          </fieldset>
+          <fieldset class="my-4">
+            <label for="last name" class="fw-bold d-block my-1">Last name*</label>
+            <input type="text" name="" id="" class="rounded col-12 py-2 ps-1" required>
+          </fieldset>
+          <fieldset class="my-4">
+            <label for="tel" class="fw-bold d-block my-1">Telephone*</label>
+            <input type="tel" name="" id="" class="rounded col-12 py-2 ps-1" required>
+          </fieldset>
+          <fieldset class="my-4">
+            <label for="address" class="fw-bold d-block my-1">Delivery address*</label>
+            <input type="text" name="" id="" class="rounded col-12 py-2 ps-1" required placeholder="e.g. Unit 1, 123 Main Street">
+          </fieldset>
+          <fieldset class="my-4">
+            <label for="town" class="fw-bold d-block my-1">Suburb/town*</label>
+            <input type="text" name="" id="" class="rounded col-12 py-2 ps-1" required>
+          </fieldset>
+          <fieldset class="my-4">
+            <label for="state" class="fw-bold d-block my-1">State/territory*</label>
+            <select name="state" id="state" class="col-12 rounded">
+              <option value="Connecticut" selected>Connecticut</option>
+              <option value="Nairobi">Nairobi</option>
+            </select>
+          </fieldset>
+          <fieldset class="my-4">
+            <label for="code" class="fw-bold d-block my-1">Postcode/ZIP Code*</label>
+            <input type="text" name="" id="code" class="rounded col-12 py-2 ps-1" required>
+          </fieldset>
+          <fieldset class="my-4">
+            <label for="country" class="fw-bold d-block my-1">Country*</label>
+            <select name="state" id="state" class="col-12 rounded">
+              <option value="Connecticut" selected>United States</option>
+              <option value="Nairobi">Kenya</option>
+            </select>
+          </fieldset>
+          <input type="checkbox" name="" id="" class="m-3 ms-0" checked>
+          Same billing address
+        </form>
 
       </section>
 
